@@ -88,7 +88,7 @@ writeConfig(conf, configfile=file.path(outputfolder, 'breakpointR.config'))
 #=====================================
 # Find breakpoints and write BED files
 #=====================================
-files <- list.files(inputfolder, full.names=TRUE, recursive=T, pattern=paste0('.bam$'))
+files <- list.files(inputfolder, full.names=TRUE, recursive=F, pattern=paste0('.bam$'))
 
 ### Binning ###
 if (createCompositeFile) {
